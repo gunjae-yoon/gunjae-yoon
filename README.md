@@ -1,4 +1,4 @@
-<h1 align="center">˗ˏˋ 🌟 ˎˊ˗ welcome !!. I'm gunaje-yoon</h1>
+<h1 align="center">˗ˏˋ 🌟 ˎˊ˗ welcome !!. I'm gunjae-yoon</h1>
 <h3 align="center">A system & middleware developer from Republic of Korea</h3>
 
 <div align="center">
