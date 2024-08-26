@@ -24,7 +24,7 @@ jobs:
         run: |
           git config --global user.name "gunjae-yoon"
           git config --global user.email "rnswo42b@gmail.com"
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/${{ github.repository_owner }}/$(basename $GITHUB_REPOSITORY).git
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/gunjae-yoon/gunjae-yoon.git
 
       - name: Commit & Push
         run: |
