@@ -9,16 +9,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           USERNAME: ${{ github.repository_owner }}
+
+      - name: Set up Git authentication
+        run: |
+          git config --global user.name "gunjae-yoon"
+          git config --global user.email "rnswo42b@gmail.com"
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/${{ github.repository_owner }}/$(basename $GITHUB_REPOSITORY).git
+
       - name: Commit & Push
         run: |
-          git config user.name "gunjae-yoon"
-          git config user.email "rnswo42b@gmail.com"
           git add -A .
           git commit -m "generated"
-          git push
+          git push origin HEAD:main
