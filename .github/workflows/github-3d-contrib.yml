@@ -10,19 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v2
-
+      - uses: actions/checkout@v3
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           USERNAME: ${{ github.repository_owner }}
-
       - name: Commit & Push
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}  # Use the PAT for authentication
         run: |
-          git config user.name "gunjae-yoon"
-          git config user.email "rnswo42b@gmail.com"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add -A .
           git commit -m "generated"
-          git push https://${{ secrets.PAT }}@github.com/${{ github.repository_owner }}/$(basename $GITHUB_REPOSITORY).git HEAD:main
+          git push
