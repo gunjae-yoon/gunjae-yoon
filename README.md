@@ -2,7 +2,6 @@
 <h3 align="center">A system & middleware developer from Republic of Korea</h3>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gunjae-yoon&layout=compact&theme=dracula" alt="Top Langs" style="height: 150px; card_width: 300px;"/>
-  <img src="https://github-readme-stats.vercel.app/api?username=gunjae-yoon&show_icons=true&theme=dracula" alt="GitHub Stats" style="height: 150px; card_width: 300px;"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=gunjae-yoon&theme=dracula&hide_border=true" style="height: 250px; ccard_width: 300px;">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=gunjae-yoon&theme=transparent" style="width: 600px;">
+  <img src="https://github.com/gunjae-yoon/gunjae-yoon/blob/main/profile-3d-contrib/profile-night-rainbow.svg" style="width: 800px;">
 </div>
